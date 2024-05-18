@@ -1,0 +1,16 @@
+Region,Service,Description,Monthly Cost,12 months total
+US East (N. Virginia),Amazon Route 53,Hosted Zone 1. 100 million queries per month,"40,50","486,00"
+,Application Load Balancer,,"32,86","394,32"
+,Amazon Virtual Private Cloud (VPC),,"65,70","788,40"
+,Amazon EC2,6 x c4.8xlarge	,"6.968,58","83.622,96"
+,Amazon RDS for MySQL,2x db.r6g.8xlarge + 1TB storage + 1TB backup,"10.750,00","129.000,00"
+,S3 Standard,1TB - 100 million requests,"68,00","816,00"
+,CloudFront,500m requests,"500,00","6.000,00"
+,CloudWatch,200 metrics with 1TB logs,"576,00",
+Total,,,19002,"221.107,68"
+,,,,
+"Change: 
+- Vertical scale the ec2 and rds, also add Cloud watch service for analysing. 
+- EC2 from m5.4xlarge => c4.8xlarge
+- RDS from r5.4xlarge => r6g.8xlarge
+The Monthly cost are 19k $ now",,,,
